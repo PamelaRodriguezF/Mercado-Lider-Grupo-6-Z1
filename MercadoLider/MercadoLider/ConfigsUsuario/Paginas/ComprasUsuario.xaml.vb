@@ -1,0 +1,3 @@
+﻿Class ComprasUsuario
+
+End Class

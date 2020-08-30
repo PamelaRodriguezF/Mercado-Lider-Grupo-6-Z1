@@ -1,0 +1,71 @@
+﻿<Page xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" xmlns:local="clr-namespace:MercadoLider" xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="MenuProductos" mc:Ignorable="d" d:DesignHeight="620" d:DesignWidth="1180" Title="MenuProductos">
+    <!-- CanvasResultadosBusqueda -->
+    <Canvas x:Name="___CanvasResultadosBusqueda_" Height="620" Width="1180" Background="#DFD7CA" Canvas.Left="100" Canvas.Top="100">
+        <!-- BorderLogoEmpresa -->
+        <Border x:Name="BorderLogoEmpresa" BorderThickness="1" Height="120" Canvas.Top="10" Width="290">
+            <Border.Background>
+                <ImageBrush ImageSource="/MercadoLider;component/Recursos/MercadoLiderLogo.png" Stretch="None" />
+            </Border.Background>
+        </Border>
+        <!-- TextBoxBuscador -->
+        <Label x:Name="FormatoBusquedaLabel" Height="25" Width="250" Content="" Padding="0" Canvas.Left="809" Canvas.Top="39" FontSize="14" FontStyle="Italic" HorizontalContentAlignment="Right" />
+        <TextBox x:Name="TextBoxBuscador" Height="46" Width="730" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Open Sans" materialDesign:HintAssist.Hint="Busca aqui los productos que necesitas!" materialDesign:HintAssist.Foreground="#FF2F3E45" materialDesign:TextFieldAssist.UnderlineBrush="#FF2F3E45" Style="{StaticResource MaterialDesignFloatingHintTextBox}" CaretBrush="#FF2F3E45" BorderBrush="#FF2F3E45" Foreground="#FF2F3E45" FontSize="16" Background="{x:Null}" SelectionBrush="#FF2F3E45" HorizontalContentAlignment="Center" Margin="0" Canvas.Left="330" Canvas.Top="64" />
+        <!-- BotonBuscador -->
+        <Button x:Name="BotonBuscador" Content="Buscar!" Canvas.Top="71" Width="70" Background="#FF1C1530" BorderBrush="#FF91B7C0" FontFamily="Segoe UI Light" FontWeight="Normal" Padding="0" Canvas.Left="1075" Height="32" />
+        <!-- BorderCategoria -->
+        <Border x:Name="BorderCategoria" BorderBrush="Black" BorderThickness="1" Height="80" Canvas.Left="400" Canvas.Top="168" Width="380" />
+        <!-- PanelProducto -->
+        <Border x:Name="PanelProducto" BorderBrush="Black" BorderThickness="1" Height="80" Canvas.Left="50" Canvas.Top="260" Width="1080">
+            <!-- CanvasProducto -->
+            <Canvas x:Name="___CanvasProducto" Height="78">
+                <!-- BorderFotoDeProducto -->
+                <Border x:Name="BorderFotoDeProducto" BorderThickness="1" Height="74" Canvas.Left="3" Width="76" Canvas.Top="2">
+                    <Border.Background>
+                        <ImageBrush ImageSource="/MercadoLider;component/Recursos/Temporal/Album The Stage.jpg" Stretch="Uniform" />
+                    </Border.Background>
+                </Border>
+                <!-- LabelNombre-->
+                <Label x:Name="LabelNombre" Content="Album The Stage" Height="38" Width="150" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="16" Canvas.Left="84" Canvas.Top="1" />
+                <!-- LabelPrecio-->
+                <Label x:Name="LabelPrecio" Content="$1000" Height="37" Width="150" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="16" Canvas.Left="84" Canvas.Top="39" />
+                <!-- LabelDescripcion-->
+                <TextBlock x:Name="LabelDescripcion" TextWrapping="Wrap" Height="74" Width="770" FontSize="16" Canvas.Left="239" Canvas.Top="2" Padding="5" />
+                <Button x:Name="BotonVer" Style="{DynamicResource MaterialDesignFloatingActionLightButton}" Content="Ver" Canvas.Top="14" Width="54" Background="#FF1C1530" BorderBrush="#FF91B7C0" FontFamily="Open Sans" FontWeight="Normal" Padding="0" Canvas.Left="1014" Height="54" Click="Button_Click" Foreground="#DDFFFFFF" />
+
+            </Canvas>
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="1" Height="80" Canvas.Left="50" Canvas.Top="355" Width="1080">
+            <Canvas Height="78">
+                <Border BorderThickness="1" Height="74" Canvas.Left="3" Width="76" Canvas.Top="2">
+                    <Border.Background>
+                        <ImageBrush ImageSource="/MercadoLider;component/Recursos/Temporal/Wacom Cintiq.jpg" Stretch="Uniform" />
+                    </Border.Background>
+                </Border>
+                <Label Content="Wacom Cintiq" Height="38" Width="155" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="16" Canvas.Left="84" Canvas.Top="1" />
+                <Label Content="$27.000" Height="37" Width="150" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="16" Canvas.Left="84" Canvas.Top="39" />
+                <TextBlock x:Name="LabelDescripcion2" TextWrapping="Wrap" Height="74" Width="770" FontSize="16" Canvas.Left="239" Canvas.Top="2" Padding="5" />
+                <Button x:Name="BotonVer_Copy" Style="{DynamicResource MaterialDesignFloatingActionLightButton}" Content="Ver" Canvas.Top="14" Width="54" Background="#FF1C1530" BorderBrush="#FF91B7C0" FontFamily="Open Sans" FontWeight="Normal" Padding="0" Canvas.Left="1014" Height="54" Click="Button_Click" Foreground="#DDFFFFFF" />
+
+            </Canvas>
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="1" Height="80" Canvas.Left="50" Canvas.Top="450" Width="1080" />
+        <Border BorderBrush="Black" BorderThickness="1" Height="80" Canvas.Left="50" Canvas.Top="450" Width="1080">
+            <Canvas Height="78">
+                <Border BorderThickness="1" Height="74" Canvas.Left="3" Width="76" Canvas.Top="2">
+                    <Border.Background>
+                        <ImageBrush ImageSource="/MercadoLider;component/Recursos/Temporal/Sketchbooks.jpg" Stretch="Uniform" />
+                    </Border.Background>
+                </Border>
+                <Label Content="Sketckbooks" Height="38" Width="150" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="16" Canvas.Left="84" Canvas.Top="1" />
+                <Label Content="$1000" Height="37" Width="150" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="16" Canvas.Left="84" Canvas.Top="39" />
+                <TextBlock x:Name="LabelDescripcion3" Text="" TextWrapping="Wrap" Height="74" Width="770" FontSize="16" Canvas.Left="239" Canvas.Top="2" Padding="5" />
+                <Button x:Name="BotonVer_Copy1" Style="{DynamicResource MaterialDesignFloatingActionLightButton}" Content="Ver" Canvas.Top="14" Width="54" Background="#FF1C1530" BorderBrush="#FF91B7C0" FontFamily="Open Sans" FontWeight="Normal" Padding="0" Canvas.Left="1014" Height="54" Click="Button_Click" Foreground="#DDFFFFFF" />
+
+            </Canvas>
+        </Border>
+        <!-- BotonAtras -->
+        <Button x:Name="BotonAtras" Content="Atrás" Canvas.Top="557" Width="105" Background="#FF1C1530" BorderBrush="#FF91B7C0" FontFamily="Segoe UI Light" FontWeight="Normal" Padding="0" Canvas.Left="1025" Height="40" />
+        <!-- BotonVer -->
+
+    </Canvas>
+</Page>
